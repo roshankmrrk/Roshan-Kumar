@@ -63,7 +63,7 @@ const Hero = () => {
 
                         <motion.span
                             variants={childVariants}
-                            className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent"
+                            className="bg-gradient-to-r from-stone-300 to-stone-600 mt-4 bg-clip-text text-3xl tracking-tight text-transparent"
                         >
                             Full Stack Developer
                         </motion.span>
@@ -80,7 +80,7 @@ const Hero = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             download
-                            className="bg-white rounded-full px-6 py-3 text-sm font-semibold text-stone-800 mb-10 shadow-md"
+                            className="bg-white rounded-full px-6 py-3 mt-8 text-sm font-semibold text-stone-800 mb-10 shadow-md"
                             whileHover={{
                                 scale: 1.1,
                                 boxShadow: "0px 0px 15px rgba(255, 255, 255, 0.6)",
