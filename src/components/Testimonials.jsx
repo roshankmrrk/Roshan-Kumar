@@ -3,39 +3,39 @@ import { useEffect, useState } from "react";
 
 const testimonials = [
   {
-    name: "Rohit Sharma",
-    role: "Frontend Developer",
+    name: "Angad Sharma",
+    role: "Dot Net Developer, Delhi, India",
     feedback:
       "Working with Roshan was a great experience! His React and Tailwind CSS skills are top-notch and he delivers visually stunning results.",
-    image: "https://i.pravatar.cc/100?img=12",
+    image: "https://balwant.netlify.app/anagad-modified.png",
   },
   {
-    name: "Priya Patel",
-    role: "Project Manager",
+    name: "Rahul Jatav",
+    role: "BCA Graduate, Gorakhpur, India",
     feedback:
       "Roshan is highly professional and detail-oriented. The web app he built was fast, secure, and beautifully responsive!",
-    image: "https://i.pravatar.cc/100?img=32",
+    image: "https://balwant.netlify.app/rahul-modified.png",
   },
   {
-    name: "Vikram Singh",
-    role: "Backend Engineer",
+    name: "Balavant Kumar",
+    role: "Full Stack Developer Noida,India",
     feedback:
       "His backend logic and API handling are impressive. The integration with MongoDB and Express.js was flawless!",
-    image: "https://i.pravatar.cc/100?img=45",
+    image: "https://balwant.netlify.app/balwantlogo-modified.png",
   },
   {
-    name: "Neha Verma",
-    role: "UI/UX Designer",
-    feedback:
-      "Roshan understands design systems and implements them beautifully with Tailwind CSS and Framer Motion animations.",
-    image: "https://i.pravatar.cc/100?img=26",
-  },
-  {
-    name: "Arjun Mehta",
-    role: "Full Stack Developer",
+    name: "Karan Kumar",
+    role: "Frontend Developer Noida,India",
     feedback:
       "He has deep MERN stack knowledge and a great eye for detail. It’s always fun collaborating with him on projects.",
-    image: "https://i.pravatar.cc/100?img=60",
+    image: "https://balwant.netlify.app/karan-modified.png",
+  },
+  {
+    name: "Rahul Sharma",
+    role: "BCA Graduate, Gorakhpur, India",
+    feedback:
+      "Roshan is highly professional and detail-oriented. The web app he built was fast, secure, and beautifully responsive!",
+    image: "https://balwant.netlify.app/rahul-modified.png",
   },
 ];
 
@@ -62,22 +62,22 @@ const Testimonials = () => {
   const visibleCount = isMobile ? 1 : 3;
 
   return (
-    <div className="pb-24" id="testimonials">
+    <div className="pb-32" id="testimonials">
       {/* Title */}
       <motion.h2
-        initial={{ opacity: 0, y: -50 }}
+        initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.3 }}
-        className="my-20 text-center text-4xl font-semibold"
+        className="my-16 text-center text-4xl font-semibold text-white"
       >
         Testimonials 💬
       </motion.h2>
 
       {/* Carousel */}
-      <div className="relative overflow-hidden max-w-6xl mx-auto">
+      <div className="relative overflow-hidden max-w-7xl mx-auto px-4">
         <motion.div
-          className="flex"
+          className="flex gap-8"
           animate={{ x: `-${current * (100 / visibleCount)}%` }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           style={{
@@ -87,7 +87,7 @@ const Testimonials = () => {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className={`w-${isMobile ? "full" : "1/3"} flex justify-center p-4`}
+              className="flex justify-center"
               style={{ minWidth: `${100 / visibleCount}%` }}
             >
               <motion.div
@@ -111,7 +111,7 @@ const Testimonials = () => {
       </div>
 
       {/* Dots */}
-      <div className="flex justify-center mt-6 gap-2">
+      <div className="flex justify-center mt-10 gap-2">
         {Array.from({
           length: testimonials.length - (visibleCount - 1),
         }).map((_, i) => (
