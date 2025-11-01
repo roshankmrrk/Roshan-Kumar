@@ -37,6 +37,13 @@ const testimonials = [
       "Roshan is highly professional and detail-oriented. The web app he built was fast, secure, and beautifully responsive!",
     image: "https://balwant.netlify.app/rahul-modified.png",
   },
+  {
+    name: "Rahul Jatav",
+    role: "BCA Graduate, Gorakhpur, India",
+    feedback:
+      "Roshan is highly professional and detail-oriented. The web app he built was fast, secure, and beautifully responsive!",
+    image: "https://balwant.netlify.app/rahul-modified.png",
+  },
 ];
 
 const Testimonials = () => {
